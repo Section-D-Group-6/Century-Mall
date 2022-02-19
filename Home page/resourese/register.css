@@ -1,0 +1,91 @@
+.popup{
+    margin-top: 50px;
+    animation: pop 0.05s ease-in;
+    display: none;
+    position: absolute;
+    top: 50px;
+    z-index: 5;
+    width: 100%;
+    border-radius: 20px;
+}
+.popup form{
+    background-color: #fff;
+    border: 3px solid #f1f1f1;
+    box-shadow: 0 0 15px grey;
+    max-width: 40%;
+    margin: auto;
+    border-radius: 20px;
+}
+  
+.popup form input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.popup form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.popup form button:hover {
+    opacity: 0.8;
+}
+  
+.popup form .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+  
+.popup form .imgcontainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+  
+.popup form img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+  
+.popup form .container {
+    padding: 16px;
+}
+  
+.popup form span.psw {
+    float: right;
+    padding-top: 16px;
+}
+  
+.popup #signup{
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .popup{
+        position: absolute;
+        width: 100%;
+    }
+    .popup form{
+        width: 100%;
+    }
+    .popup form span.psw {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .popup form .cancelbtn {
+        width: 100%;
+    }
+}

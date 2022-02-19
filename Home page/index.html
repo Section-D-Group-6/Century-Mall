@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Century Mall | {title}</title>
+
+  <link rel="stylesheet" href="vendors/css/grid.css" />
+  <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
+  <link rel="stylesheet" href="resourese/style.css">
+  <link rel="stylesheet" href="./resourese/slider.css">
+  <link rel="stylesheet" href="./resourese/register.css">
+
+</head>
+
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Century mall</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="ion-android-close"></i></label>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#" class="desktop-item">Services</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Services</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+
+                <img id="dispalyimg" src="./resourese/image/resturant.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>Shops</header>
+                <ul class="mega-links">
+                  <li id="fashion" onmouseover="display(this)"><a
+                      href="./resourese/shops and beauty/index.html#section1">Fashion</a></li>
+                  <li id="electronics" onmouseover="display(this)"><a
+                      href="./resourese/shops and beauty/index.html#section3">Electronics</a></li>
+                  <li id="art" onmouseover="display(this)"><a
+                      href="./resourese/shops and beauty/index.html#section2">Art</a></li>
+                  <li><a href="#">Shop 4</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Entertaiment</header>
+                <ul class="mega-links">
+                  <li id="game" onmouseover="display(this)"><a href="#">Game Zone</a></li>
+                  <li id="gym" onmouseover="display(this)"><a href="#">Gym</a></li>
+                  <li id="cafeteria" onmouseover="display(this)"><a href="#">Cafeteria</a></li>
+                  <li id="cinema" onmouseover="display(this)"><a href="#">Cinema</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Beauty Salon</header>
+                <ul class="mega-links">
+                  <li id="spa" onmouseover="display(this)"><a href="#">Spa</a></li>
+                  <li id="massage" onmouseover="display(this)"><a href="#">Massage</a></li>
+                  <li id="cosmotics" onmouseover="display(this)"><a href="#">Cosmotics</a></li>
+                  <li id="treatments" onmouseover="display(this)"><a href="#">Treatments</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Feedback</a></li>
+        <li class="signin"><button id="userSignin">Signin</button></li>
+        <li class="profile"><button id="user_profile">Profile</button></li>
+        <li class="logout"><button id="user_logout">Logout</button></li>
+
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="ion-android-menu"></i></label>
+    </div>
+
+  </nav>
+  <div class="popup" id="popup" style="display: none;">
+    <form id="login">
+      <div class="imgcontainer">
+        <h1 style="font-family: sans-serif;font-size: 35px;color: rgb(31, 30, 30);font-weight: bolder;">Login</h1>
+      </div>
+
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="userName" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pass" id="pass" required minlength="8">
+
+        <button type="button" id="userlogin"><b>Login</b></button>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        Don't have an account? <button type="button" id="signupBtn">Signup</button>
+      </div>
+    </form>
+
+    <form id="signup">
+      <div class="imgcontainer">
+        <h1 style="font-family: sans-serif;font-size: 35px;color: rgb(31, 30, 30);font-weight: bolder;">Signup</h1>
+      </div>
+
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+        <label><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="pwd" required>
+
+        <label><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="confirmPass" id="confirmPass" required>
+
+        <button type="button" id="userSignup"><b>Signup</b></button>
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        Already have an account? <button type="button" id="loginBtn">Login</button>
+      </div>
+    </form>
+  </div>
+  <header class="main2">
+    <div class="century">
+      <h1>Century mall</h1>
+      <h4>Visit our mall and enjoy your life </h4>
+
+      <a href="#info"><button class="read">Read More</button></a>
+
+    </div>
+
+
+  </header>
+
+
+  <div class="himage"><img width="80%" src="./resourese/image/buy.jpg" alt=""></div>
+
+
+  <!--////// shops catagory section 1 /////// -->
+  <section class="section1">
+    <div class="catagory" id="info"> Information about us </div>
+    <div class="rows">
+      <div class="col span-1-of-4 infcard">
+        <i class="ion-earth"></i>
+        Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum.
+      </div>
+      <div class="col span-1-of-4 infcard">
+        <i class="ion-android-bicycle"></i>
+        Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum.
+      </div>
+      <div class="col span-1-of-4 infcard">
+        <i class="ion-ios-alarm-outline"></i>
+        Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum.
+      </div>
+
+
+      <div class="col span-1-of-4 infcard">
+        <i class="ion-ios-cart-outline"></i>
+        Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum.
+      </div>
+
+    </div>
+    <!--////// shops catagory section 2 /////// -->
+
+  </section>
+
+  <section class="section2">
+    <div class="catagory" id="fashion"> Service we provide to you</div>
+    <div class="rows">
+      <div class="col span-1-of-3">
+        <div class="serv-list">
+          <i class="ion-laptop"></i>
+          <p>
+            <span>Electronics shop</span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+        </div>
+        <div class="serv-list">
+          <i class="ion-coffee"></i>
+          <p>
+            <span> Cafe and Resturant </span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+        </div>
+        <div class="serv-list">
+
+          <i class="ion-videocamera"></i>
+          <p>
+            <span>Cinema</span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+        </div>
+        <div class="serv-list">
+          <i class="ion-tshirt-outline"></i>
+          <p>
+            <span>Fashion Cloths</span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+
+        </div>
+
+      </div>
+      <div class="col span-1-of-3">
+
+        <img src="./resourese/image/service2.jpg" width="100%" alt="">
+      </div>
+      <div class="col span-1-of-3">
+        <div class="serv-list">
+          <i class="ion-ios-rose-outline"></i>
+          <p>
+            <span>Beauty salon</span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+        </div>
+        <div class="serv-list">
+          <i class="ion-ios-game-controller-b"></i>
+          <p>
+            <span>Game Zone</span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+
+        </div>
+        <div class="serv-list">
+          <i class="ion-paintbrush"></i>
+          <p>
+            <span>Art shops</span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+
+        </div>
+        <div class="serv-list">
+
+          <i class="ion-ios-cart-outline"></i>
+          <p>
+            <span>Supermarkets</span>
+            Lorem ipsum
+            dolor sit amet consectetur,
+          </p>
+
+        </div>
+
+      </div>
+  </section>
+
+  <section class="section3">
+    <div class="catagory" id="fashion">Testimony</div>
+    <div class="rows">
+      <div class="col span-1-of-4 infcard">
+        <h1 class="qoute">"</h1>
+        <img width="100px" src="./resourese/image/men.jpg" alt="">
+        <span>Alemitu Ayana</span>
+        Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum.
+      </div>
+      <div class="col span-1-of-4 infcard">
+        <h1 class="qoute">"</h1>
+        <img width="100px" src="./resourese/image/women2.jpg" alt="">
+        <span>Alemitu Ayana</span>
+        Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum.
+      </div>
+      <div class="col span-1-of-4 infcard">
+        <h1 class="qoute">"</h1>
+        <img width="100px" src="./resourese/image/men.jpg" alt="">
+        <span>Tebarek belete</span>
+        Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum.
+      </div>
+
+
+      <div class="col span-1-of-4 infcard">
+        <h1 class="qoute">"</h1>
+        <img width="100px" src="./resourese/image/women1.jpg" alt="">
+        <span>Aster kibru</span>
+        " Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit
+        . Nesciunt, non quasi? Maxime, natus molestiae
+        dicta veritatis voluptate sapiente odit necessitatibus,
+        at quod in atque iure maiores omnis, aperiam incidunt earum."
+      </div>
+
+    </div>
+  </section>
+  <!--////// shops catagory section 4 /////// -->
+
+  <section class="section4">
+
+    <div class="rows">
+      <div class="col span-1-of-2">
+        <div class="screen">
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>CONTACT US</span>
+
+              </div>
+
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="NAME" value="">
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="CONTACT NO">
+                </div>
+                <div class="app-form-group message">
+                  <input class="app-form-control" placeholder="MESSAGE">
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">CANCEL</button>
+                  <button class="app-form-button">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col span-1-of-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.486073529198!2d38.81194401531328!3d9.019345493527577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8551e70d4e55%3A0x261206bdb30d4986!2sCentury%20Mall!5e0!3m2!1sen!2set!4v1645226172712!5m2!1sen!2set"
+          height=350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Century mall<span>C</span></h3>
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        ·
+        <a href="#">Shops</a>
+        ·
+        <a href="#">Cinema</a>
+        ·
+        <a href="#">Entertaiment</a>
+        ·
+        <a href="#">About as</a>
+        ·
+        <a href="#">help</a>
+      </p>
+
+      <p class="footer-company-name">Century mall Ethiopia &copy; 2019</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>MAKE LiFE Easy</span></p>
+      </div>
+
+
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a></a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>Visit as</span>
+
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="ion-social-instagram"></i></a>
+        <a href="#"><i class="ion-social-googleplus"></i></a>
+        <a href="#"><i class="ion-social-twitter"></i></a>
+        <a href="#"><i class="ion-social-facebook"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      document.getElementById('login').style.display = 'block';
+      document.getElementById('signup').style.display = 'none';
+    })
+    document.getElementById('signupBtn').addEventListener('click', () => {
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('signup').style.display = 'block';
+    })
+  </script>
+  <script src="./resourese/main.js"></script>
+
+</body>
+
+</html>
