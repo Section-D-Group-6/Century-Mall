@@ -1,10 +1,10 @@
-function display(e){
+function display(e) {
 
-    var imageSrc=document.querySelector("#dispalyimg");
-   
-    
+    var imageSrc = document.querySelector("#dispalyimg");
 
-    switch(e.id){
+
+
+    switch (e.id) {
         case "fashion":
             imageSrc.src = "./resourese/image/ambasador2.jpg";
             break;
@@ -42,7 +42,7 @@ function display(e){
 
 
     }
-   
+
 
 
 
@@ -59,6 +59,11 @@ const getNewUser = _ => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('pwd').value;
     const confirmPass = document.getElementById('confirmPass').value;
+    const user = localStorage.getItem(`user_${userName}`);
+
+    if (user != null) {
+        document.getElementById('uname').style.borderColor = 'red';
+    }
 
     const emailRegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (emailRegExp.test(email) === false) {
@@ -67,7 +72,8 @@ const getNewUser = _ => {
     if (password !== confirmPass) {
         document.getElementById('pwd').style.borderColor = 'red';
     }
-    if (password === confirmPass && emailRegExp.test(email)) {
+    if (password === confirmPass && emailRegExp.test(email) && user == null) {
+
         const newUser = new User(userName, email, password);
         setCookie('userName', newUser.userName, 4);
         localStorage.setItem(`user_${newUser.userName}`, JSON.stringify(newUser));
@@ -157,7 +163,7 @@ function checkCookie() {
 
 document.getElementById('userSignin').addEventListener('click', () => {
 
-  //  document.body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.527))';
+    //  document.body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.527))';
     document.body.style.overflow = 'hidden';
     document.getElementById('popup').style.display = 'block';
     document.getElementById('popup').style.visibility = 'visible';

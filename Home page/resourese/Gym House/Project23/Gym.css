@@ -1,0 +1,314 @@
+
+.home-page-image{
+
+    width: 100%;
+    height: auto;
+}
+
+#main-topic{
+
+    text-align: center;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    color:black;
+    font-style: normal;  
+    font-weight: 800;
+}
+.type-header{
+   color: white;
+   font-size: 30px;
+   font-weight: 500;
+}
+section.main-section{
+
+    display: flex;
+    height: 350px;
+    justify-content: flex-end; 
+}
+
+article.gym-type{
+
+     
+    width: 33.3%;
+    flex: 33.3%;
+    height: 350px;
+    margin-left: 30px;
+    
+   
+}
+div.image-lists{
+
+    width: 33.3%;
+    flex: 33.3%;
+    flex-grow: 1;  
+    border: 0.5px solid wheat;  
+    border-radius: 40px;
+    overflow: hidden;
+    height: 350px;
+    margin-left: 30px;   
+}
+
+div.descrption{
+
+
+    width: 33.3%;
+    flex: 33.3%;
+    flex-grow: 1;
+    margin-left: 30px;
+    background-color: #292c2f;
+    border: 0.5px solid rgb(231, 231, 231);
+    border-radius: 40px;
+    color: rgba(255, 255, 255, 0.918);
+  
+}
+
+.gym-house-images{
+
+    width: 100%;
+    height: 370px;
+   
+}
+
+
+ul.gym-equipmeny-list
+{
+    list-style-type: none;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    border: 0.5px solid rgb(211, 211, 223);
+    border-radius: 10%;
+    background-color: #292c2f;
+  
+}
+button.equipment-type
+{
+    font-size: large;
+    margin: auto;
+    max-height: 50px;
+    height: 75px;
+    background-color:white;
+    opacity: 12;
+    vertical-align: top; 
+    color: black; 
+    border: 0mm solid;
+    border-radius: 10%;
+    width: 200px;
+    max-width: 400px;
+    transition: width 0.25s;
+    padding-right: 0%;  
+}
+
+button:hover {
+    background-color: white;
+    width: 400px;
+    height: 70px;
+    font-size: x-large;
+  }
+
+.gym_description{
+    text-align:justify;
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+ 
+}
+.gym-importance-header{
+    text-align: center;
+    font-size: 140%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+ul.sport-importance{
+    list-style-type: disc;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+.sport-importance li{
+    font-weight: 250;
+}
+
+#our-services{
+    width: 45%;
+    border: 00.5px wheat;
+    height:auto;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 15%;
+   
+}
+#service-header{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(231, 77, 90);
+    font-weight: 600;
+}
+.service-types{
+    width: 100%;
+    text-align: justify;
+   
+}
+.service-list{
+    padding-left: 20%;
+    font-size: 30px;
+    line-height: 1.5;
+    
+}
+#discount{
+    color: rgb(231, 77, 90);
+    font-size: 40px;
+    margin: auto;
+    padding-left: 100px;
+}
+
+/* style sheet for about ADK gymnastics and ADK address*/
+section.sub-class{
+
+    display: flex;
+    height: 350px;      
+}
+/*the two flex content in sub section*/
+article.aboutUs-address{
+
+    width: 50%;
+    border: 0.2mm solid;
+    border-radius: 15px;
+    height: 350px;
+    margin-left: 30px;  
+    text-align: center;
+    
+}
+/*The inner content of about us and address*/
+#about-gymnastics, #address-gymnastics{
+    width: 90%;
+    margin: auto;
+    background-color:inherit;
+    text-align: justify;
+    font-size: 25px;
+    line-break: loose;  
+    line-height: 1;
+    font-weight: 400;
+}
+/*header of about us and address*/
+#ADK-aboutUS-header,#ADK-address-header{
+    font-size: 30px;   
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(231, 77, 90);
+    font-weight: 600;
+}
+#address-gymnastics{
+    text-align: center;    
+}
+/*caption for about us*/
+#about-us-caption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: inherit;
+}
+
+
+
+@media (max-width: 800px) {
+
+    img#home-page-image{
+
+    width: 100%;
+    height: auto;
+}
+    section.main-section {
+      flex-direction: column;
+      height:1500px ;
+    }
+   
+div.image-lists{
+
+    width: 85%;
+    height: auto;
+    margin: auto; 
+
+    padding-top: 8%;
+    border-radius: 0%;
+    border: 0ch;
+    
+}
+.gym-house-images{
+   width: 100%;
+   height: 375px;
+   border-radius: 10%;
+   margin: auto;
+  
+}
+article.gym-type{
+
+    width: 85%; 
+    height: 100%;
+    margin: auto;
+}
+div.descrption{
+
+    margin: auto;
+    width: 85%;
+    height: 100%;
+    margin-top: 0;   
+}
+button.equipment-type{
+    width: 70%;
+    padding-right: 10%; 
+    
+   
+   
+}
+section.sub-class{
+
+    display: flex;
+    flex-direction: column;
+    height: 1000px;   
+}
+article.aboutUs-address{ 
+  
+
+    margin-top: 5%;
+    width: 85%;
+    border: 1mm solid;
+    border-radius: 15px;
+    height: auto;
+    margin-left: 30px;     
+
+
+
+     
+}
+/*The inner content of about us and address*/
+#about-gymnastics, #address-gymnastics{
+    width: 90%;
+    margin: auto;
+    background-color:inherit;
+    text-align: justify;
+    font-size:25px;
+    line-break: loose;  
+}
+/*header of about us and address*/
+#ADK-aboutUS-header,#ADK-address-header{
+    font-size: 30px;   
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/*caption for about us*/
+#about-us-caption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.gym-importance-header,ul.sport-importance,.gym_description{
+   
+    font-size: 140%;  
+}
+
+  }
